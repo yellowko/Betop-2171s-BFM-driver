@@ -31,28 +31,28 @@ hid原始数据包在前面有个ID号，我这里是0x00
 
 **事件**   
 键位|线性键值|键值     
----|---|---
-Up|				        |Data[3] 0F=>00
-Right|				    |Data[3] 0F=>02
-Down|				    |Data[3] 0F=>04
-Left|				    |Data[3] 0F=>06
-LSX|	Data[4] 00-FF|
-LSY|	Data[5] 00-FF|
-LS|				        |Data[2] 00=>20
-RSX|	Data[6] 00-FF|
-RSY|	Data[7] 00-FF|
-RS|				        |Data[2] 00=>40
-LB|				        |Data[1] 00=>40
-RB|				        |Data[1] 00=>80
-LT|	    Data[8] 00-FF	|Data[2] 00=>01
-RT|	    Data[9] 00-FF	|Data[2] 00=>02
-B|	    Data[10] 00=>FF	|Data[1] 00=>02
-Y|	    Data[11] 00=>FF	|Data[1] 00=>10
-X|	    Data[12] 00=>FF	|Data[1] 00=>08
-A|	    Data[13] 00=>FF	|Data[1] 00=>01
-Back|				    |Data[2] 00=>04
-Start|				    |Data[2] 00=>08
-Home|				    |Data[2] 00=>10
+---|---|---         
+Up|				        |Data[3] 0F=>00         
+Right|				    |Data[3] 0F=>02         
+Down|				    |Data[3] 0F=>04     
+Left|				    |Data[3] 0F=>06     
+LSX|	Data[4] 00-FF|      
+LSY|	Data[5] 00-FF|      
+LS|				        |Data[2] 00=>20     
+RSX|	Data[6] 00-FF|      
+RSY|	Data[7] 00-FF|      
+RS|				        |Data[2] 00=>40     
+LB|				        |Data[1] 00=>40     
+RB|				        |Data[1] 00=>80     
+LT|	    Data[8] 00-FF	|Data[2] 00=>01     
+RT|	    Data[9] 00-FF	|Data[2] 00=>02     
+B|	    Data[10] 00=>FF	|Data[1] 00=>02     
+Y|	    Data[11] 00=>FF	|Data[1] 00=>10     
+X|	    Data[12] 00=>FF	|Data[1] 00=>08     
+A|	    Data[13] 00=>FF	|Data[1] 00=>01     
+Back|				    |Data[2] 00=>04     
+Start|				    |Data[2] 00=>08     
+Home|				    |Data[2] 00=>10     
 
 ### 已知缺陷
 1. 本手柄在按压B键时会出现间断性失效，在按下与不按下之间无规律地快速切换速度很快，对除要求长按的操作并无太大影响。拆机后发现并非按键抖动造成的，怀疑是芯片内对于外部中断的读取有问题导致的。        
